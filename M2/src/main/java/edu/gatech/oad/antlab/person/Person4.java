@@ -6,6 +6,7 @@ package edu.gatech.oad.antlab.person;
  *  modified string 
  *  
  *  @author Bob
+ *  @author Byron Seonghyun Lee
  *  @version 1.1
  */
 public class Person4 {
@@ -31,7 +32,13 @@ public class Person4 {
      */
     private String calc(String input) {
       //Person 4 put your implementation here
-      return null;
+      String temp = "";
+      for (int i = 0; i < input.length(); i++) {
+        char c = input.charAt(i);
+        c += 1;
+        temp += c;
+      }
+      return temp;
     }
     
     /**
