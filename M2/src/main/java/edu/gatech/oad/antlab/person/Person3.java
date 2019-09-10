@@ -43,6 +43,12 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	  return null;
+	  char[] charInput = input.toCharArray();
+	  String reverse = "";
+	  for (int i = charInput.length - 1; i >= 0; i--) {
+		  reverse += charInput[i];
+	  }
+	  return reverse;
 	}
+
 }
